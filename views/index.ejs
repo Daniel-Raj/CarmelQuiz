@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Carmel Quiz</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="main-box">
+            <div class="timer"></div>
+            <div class="question-no"><%= qdetails.no %></div>
+            <form action="/quiz" method="POST">  
+                <div class="question-box"><%= qdetails.question %></div>
+                <div class="options-box">
+                    <input type="radio" name="op" value="<%= qdetails.option1 %>">
+                    <label for="<%= qdetails.option1 %>"><%= qdetails.option1 %></label>
+                    <input type="radio" name="op" value="<%= qdetails.option2 %>">
+                    <label for="<%= qdetails.option2 %>"><%= qdetails.option2 %></label>
+                    <input type="radio" name="op" value="<%= qdetails.option3 %>">
+                    <label for="<%= qdetails.option3 %>"><%= qdetails.option3 %></label>
+                    <input type="radio" name="op" value="<%= qdetails.option4 %>">
+                    <label for="<%= qdetails.option4 %>"><%= qdetails.option4 %></label>
+                    <br>                    
+                </div>
+                <center>
+                    <input type="submit" id="send" value="next" />
+                </center>
+                <script src="index.js"></script>
+            </form>
+        </div>
+    </body>
+</html>

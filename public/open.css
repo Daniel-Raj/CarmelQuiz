@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.main-box {
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19),0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: f40552;
+    height: 250px;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -300px;
+    color: white;
+    text-align: center;
+}
+
+input[type=submit] {
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19),0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:0;
+    background-color: eb4559;
+    height: 50px;
+    width: 200px;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media screen and (max-width:480px) {
+    .main-box {
+        height: 400px;
+        width: 300px; 
+        margin: -200px 0 0 -150px;       
+    }
+}
+
