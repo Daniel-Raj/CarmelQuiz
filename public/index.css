@@ -7,10 +7,10 @@ body {
 .timer {
     position: absolute;
     left: 285px;
-    top: -15px;
+    top: -16px;
     border-radius: 50%;
     height: 25px;
-    width: 25px;
+    width: 27px;
     text-align: center;
     padding: 5px;
     background-color: dd2c00;

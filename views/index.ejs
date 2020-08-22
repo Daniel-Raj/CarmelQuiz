@@ -7,18 +7,18 @@
     </head>
     <body>
         <div class="main-box">
-            <div class="timer"></div>
+            <div class="timer">20   </div>
             <div class="question-no"><%= qdetails.no %></div>
             <form action="/quiz" method="POST">  
                 <div class="question-box"><%= qdetails.question %></div>
                 <div class="options-box">
-                    <input type="radio" name="op" value="<%= qdetails.option1 %>">
+                    <input type="radio" id="<%= qdetails.option1 %>" name="op" value="<%= qdetails.option1 %>">
                     <label for="<%= qdetails.option1 %>"><%= qdetails.option1 %></label>
-                    <input type="radio" name="op" value="<%= qdetails.option2 %>">
+                    <input type="radio" id="<%= qdetails.option2 %>" name="op" value="<%= qdetails.option2 %>">
                     <label for="<%= qdetails.option2 %>"><%= qdetails.option2 %></label>
-                    <input type="radio" name="op" value="<%= qdetails.option3 %>">
+                    <input type="radio" id="<%= qdetails.option3 %>" name="op" value="<%= qdetails.option3 %>">
                     <label for="<%= qdetails.option3 %>"><%= qdetails.option3 %></label>
-                    <input type="radio" name="op" value="<%= qdetails.option4 %>">
+                    <input type="radio" id="<%= qdetails.option4 %>" name="op" value="<%= qdetails.option4 %>">
                     <label for="<%= qdetails.option4 %>"><%= qdetails.option4 %></label>
                     <br>                    
                 </div>
